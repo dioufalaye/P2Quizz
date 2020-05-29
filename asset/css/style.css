@@ -3,21 +3,30 @@
 }
 body{
     margin: 0;
-    padding: 0;
-   
-    
+    padding: 0; 
 }
 .bg {
-    /* The image used */
+
     background-image: url(../img/Images/my-background.jpg);
-  
     /* Full height */
     height: 100vh;
     width: 100vw;
-  
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
- 
+ #entete{ 
+    background: rgba(148, 199, 169, 0.6);
+    mix-blend-mode: screen;
+    opacity: 0.6;
+    border: 1px solid rgba(0, 0, 0, 0.6); 
+ }
+ #kayfoo{
+    font-family: Pirata One;
+   
+    transform: rotate(5deg);
+ }
+ #footer{
+     opacity: 0.6;
+}

@@ -1,42 +1,30 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>HOME</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!----------Cssmine ----------->
+    <!----------------css--->
     <link rel="stylesheet" href="asset/css/style.css">
   </head>
   <body>
-    
-     <div class="bg">
-       <!------header----->
-       <div class="jumbotron jumbotron-fluid py-0 " id="entete">
-         <div class=" d-flex justify-content-between">
-           <h1 class="col-2 display-5 px-5 d-flex align-items-center text-light text-white" id="kayfoo">
-             kayffoo
-           </h1>
-          <div class="row">
-          <div class="col-2 ">
-            <img src="asset\img\Images\logo-QuizzSA.png" class="img-fluid" alt="Responsive image">
-          </div>
-          </div>
-         </div>
-       </div>
-
-
-       
-        <div class="card-footer text-muted align-self-end fixed-bottom" style="background-color:#94C7A9" id="footer" >
-    
-  
-         </div>
-      
-     </div>
-
+        <div class="bg">
+            <div class="container-fluid "  >
+                <div class="row"style="border : 2px solid black; height:100px">
+                  azzz  
+                </div>
+                <div class="row" style="border : 2px solid red; height:300px">
+                    azzze
+                </div>
+                 <div class="row" style="border : 2px solid green; height:80px">
+                    azee
+                </div>
+            </div>
+        </div>
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
