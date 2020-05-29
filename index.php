@@ -1,3 +1,6 @@
+<?php 
+    session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,7 +18,7 @@
     
      <div class="bg">
        <!------header----->
-       <div class="jumbotron jumbotron-fluid py-0 " id="entete">
+       <div class="jumbotron jumbotron-fluid py-0 " id="entete" style="background:rgba(148, 199, 169, 0.6);">
          <div class=" d-flex justify-content-between">
            <h1 class="col-2 display-5 px-5 d-flex align-items-center text-light text-white" id="kayfoo">
              kayffoo
@@ -27,12 +30,16 @@
           </div>
          </div>
        </div>
+        <!----------------------------Contenu-->
+        <div class="container-fluid" >
+            <?php require('src/Userconnexion.php') ;?>
+          
+        </div>
 
-
-       
-        <div class="card-footer text-muted align-self-end fixed-bottom" style="background-color:#94C7A9" id="footer" >
+       <!--------------------Fin--------Contenu-->
+        <div class="card-footer text-center align-self-end fixed-bottom py-0 text" style="background-color:#94C7A9" id="footer" >
     
-  
+            <h1 class="  col-12 text-align-center display-5 d-inline-block d-flex align-items-center text-light text-white text-center">@dioufalayeDataDev</h1>
          </div>
       
      </div>

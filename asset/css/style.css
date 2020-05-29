@@ -17,7 +17,7 @@ body{
     background-size: cover;
   }
  #entete{ 
-    background: rgba(148, 199, 169, 0.6);
+    
     mix-blend-mode: screen;
     opacity: 0.6;
     border: 1px solid rgba(0, 0, 0, 0.6); 
@@ -29,4 +29,7 @@ body{
  }
  #footer{
      opacity: 0.6;
+}
+#connect{
+    background-image: url(../img/Images/my-background.jpg);
 }
