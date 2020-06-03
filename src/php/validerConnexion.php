@@ -10,10 +10,13 @@
 
     if ($userRole=="admin")
     {
-      header ('location:../html/admin.php');
+      require ('src/html/admin.php');
        echo 'admin';
-    } else {
-      header ('location:../html/joueur.php');
+    } elseif($userRole=="joueur") 
+    {
+      require ('src/html/joueur.php');
+    } else{
+      require ('index.php');
     }
   }
 

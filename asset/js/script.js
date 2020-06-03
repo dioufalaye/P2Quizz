@@ -84,7 +84,7 @@ $(document).ready(function ()
             console.log('response')
         }
     });
-    window.location.replace('src/html/joueur.php');
+    window.location.replace('src/php/validerConnexion.php');
     
 
 });
