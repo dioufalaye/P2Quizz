@@ -1,8 +1,10 @@
 $(document).ready(function () 
 {
    
+
  
   $("#connect").click(function(){
+    
      
       
       var errorLogin='';
@@ -48,6 +50,7 @@ $(document).ready(function ()
                       errorPass='';
                       $('#helppass').text(errorPass);
                       //passage ajax
+                  
                      
 
                   }
@@ -57,37 +60,33 @@ $(document).ready(function ()
 
       }
      
-
       
       
 
   });
   $("#loginForm").submit(function(e)
-{
-    e.preventDefault()
-    console.log('clic')
-    const login = $('#login').val();
-    const pwd = $('#pwd').val();
-
-    $.ajax({
-        type: "POST",
-        url: "src/php/validerConnexion.php",
-        data: {
-            userlogin:login,
-            pwd:pwd
-        },
-        //dataType: "dataType",
-        beforeSend:function(){
-            alert('login');
-        },
-        success: function (response) {
-            console.log('response')
-        }
-    });
-    window.location.replace('src/php/validerConnexion.php');
-    
-
-});
-}); 
-//----------------------------------
-
+    {
+        e.preventDefault()
+        console.log('clic')
+        const login = $('#login').val();
+        const pwd = $('#pwd').val()
+     
+        $.ajax({
+            type: "POST",
+            url: "src/php/validerConnexion.php",
+            data: {
+                userlogin:login,
+                pwd:pwd
+            },
+            //dataType: "dataType",
+            
+            success: function (response) {
+                $('html').html(response)
+               
+            }
+        });
+        
+        
+  });
+  
+})
