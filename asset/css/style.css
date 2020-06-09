@@ -4,12 +4,14 @@
 body{
     margin: 0;
     padding: 0; 
+    height: auto;
 }
 .bg {
 
     background-image: url(../img/Images/my-background.jpg);
     /* Full height */
-    height: 100vh;
+    max-height: (100vh, auto);
+    
     width: 100vw;
     /* Center and scale the image nicely */
     background-position: center;
