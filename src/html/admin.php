@@ -53,7 +53,7 @@
               <a class="nav-link" href="admin/questionListe">Question list</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gamer List</a>
+              <a class="nav-link" href="admin/LIsteJoueur">Gamer List</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
