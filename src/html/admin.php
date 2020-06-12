@@ -87,12 +87,12 @@
           
         </>
 
-       <!--------------------Fin--------Contenu-->
+       <!--------------------Fin--------Contenu
         <div class="card-footer text-center align-self-end fixed-bottom py-0 text" style="background-color:#94C7A9" id="footer" >
             <h1 class="  w-25 py-0 mx-auto text-align-center display-5 d-inline-block d-flex align-items-center text-light text-white text-center">@dioufalayeDataDev</h1>
          </div>
       
-     </div>
+     </div>-->
 
       
     <!-- Optional JavaScript -->
