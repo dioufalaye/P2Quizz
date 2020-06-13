@@ -84,7 +84,7 @@
        alert("laye")
         $.ajax({
           type: "get",
-          url: "src/php/logout.php",
+          url: "../../src/php/logout.php",
           data: {},
           //dataType: "dataType",
           success: function (response) {
