@@ -1,6 +1,5 @@
 <?php
-include("../../php/connectDatabase.php");
-global $pdo ;
+
 if (isset($_POST['question']) and isset($_POST['point'])and isset($_POST['type'])and isset($_POST['reponses'])){
     $question= $_POST['question'];
     $point= $_POST['point'];
