@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  if (!isset($_SESSION['user']['login'])) 
+	{
+		header('location:../index.php');
+		exit();
+	}
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -55,13 +63,16 @@
             <li class="nav-item">
               <a class="nav-link" href="admin/LIsteJoueur">Gamer List</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admin/addAdmin">Add admin</a>
+            </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="admin" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 advanced parametre
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Remove a gamer</a>
-                <a class="dropdown-item" href="#">Add admin</a>
+              <!--  <a class="dropdown-item" href="#">Remove a gamer</a>-->
+                <a class="dropdown-item" href="admin/addAdmin">Add admin</a>
                 <a class="dropdown-item" href="#">Something else here</a>
               </div>
             </li>
@@ -75,7 +86,7 @@
              Abdou diop
            </h1>
             
-              <button type="button" class="btn btn-danger float-right mx-auto">Deconnecter</button>
+              <button type="button" class="btn btn-danger float-right mx-auto disconnect" id="disconnect">Deconnecter</button>
             </div>
            </div>
           </div>
@@ -109,6 +120,7 @@
         var input =$(this).attr('href');
         $('#load').load(input+'.php');
       })
+     
       
     });
 

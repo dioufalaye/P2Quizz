@@ -7,7 +7,7 @@
         var_dump($db);
 
         // Get records from the database
-        $query="SELECT * FROM utilisateur ORDER BY id DESC LIMIT 5";
+        $query="SELECT * FROM utilisateur where role=joueur ORDER BY id DESC LIMIT 5";
         $statement=$pdo->prepare($query);
         $statement->execute();
         $result=$statement->fetchAll();
