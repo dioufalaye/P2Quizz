@@ -1,11 +1,4 @@
-<?php
-  session_start();
-  if (!isset($_SESSION['user']['login'])) 
-	{
-		header('location:../index.php');
-		exit();
-	}
-?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -58,7 +51,7 @@
               <a class="nav-link" href="admin/question">Add Question <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="admin/questionListe">Question list</a>
+              <a class="nav-link" href="admin/ListQuest">Question list</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="admin/LIsteJoueur">Gamer List</a>

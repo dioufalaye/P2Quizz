@@ -42,7 +42,17 @@
         <div class="" >
             <div>
              <div class="">
-                 <img src="" class=" col-4 py-5 rounded-circle bg-white float-right mx-auto d-block justify-content-right " alt="Cinque Terre" id="photo">
+             <img id="output" alt="avatar" class="avatar" style="margin-top:20%;background-color:blue;vertical-align: middle; width:50%; height:50%;;  border-radius: 50%; margin-left: 15%;">
+                            <script>
+                                        var loadFile = function(event) {
+                                            var output = document.getElementById('output');
+                                            output.src = URL.createObjectURL(event.target.files[0]);
+                                            output.onload = function() {
+                                                URL.revokeObjectURL(output.src) // free memory
+                                            }
+                                        };
+                                </script>
+                                />
                  </div>
             <div class="col-8 text-align-right ">
                 <form action="" role="form" method="POST" id="registerForm"  enctype="multipart/form-data">
@@ -72,15 +82,10 @@
                         <input type="text" name="nom" id="nom" class="form-control" placeholder="Nom" aria-describedby="helpId">
                         <small id="nomHelp" class="text-muted text-white"></small>
                     </div>
-
-                    <div class="input-group">
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="avatar" name="avatar" aria-describedby="inputGroupFileAddon04"
-                            onchange="document.getElementById('photo').src=window.URL.createObjectURL(this.files[0])">
-                           <label class="custom-file-label" for="avatar">Choose file</label> 
-                           <small id="avatarHelp" class="text-muted text-white"></small>
-                        </div>
-                    </div>
+                    <div  style="float:left;margin-left:90% ;margin-top:35% ;width:50% ;height:50%">
+                          <label for="username">Avatar</label><br>
+                          <input type="file" id="tof" name="avatar"  accept="image/*" onchange="loadFile(event)" value="Choisir un fichier" > 
+                          <span id="misstof"></span>
                 <div>
                         <button type="submit" class="btn btn-primary" name="creatAccount" value="creatAccount" id="creatAccount">Creat</button>  
                       

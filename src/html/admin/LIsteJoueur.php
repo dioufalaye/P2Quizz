@@ -1,28 +1,20 @@
 
 
 <div id="postList">
+    <div class="affiche"></div>
+
     <?php
         // Include the database configuration file
         require '../../php/connectDatabase.php';
         var_dump($db);
 
         // Get records from the database
-        $query="SELECT * FROM utilisateur where role=joueur ORDER BY id DESC LIMIT 5";
+        $query="SELECT * FROM utilisateur where role=joueur ORDER BY id DESC ";
         $statement=$pdo->prepare($query);
         $statement->execute();
         $result=$statement->fetchAll();
         $total_row=$statement->rowCount();
-        var_dump($statement);?>
-       <div class="modication">
-           <!------------------>
-            
-           <!---------------------->
-      
-       </div>
-
-       
-       
-        <?php
+        var_dump($statement);
         
             $output='
             <table id="myTab" class="table table-striped table-bordered" >
